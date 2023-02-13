@@ -1,4 +1,4 @@
-package models.usuarios.service;
+package models.usuarios.service.pagamentos;
 
 public interface FormasDePagamento {
 

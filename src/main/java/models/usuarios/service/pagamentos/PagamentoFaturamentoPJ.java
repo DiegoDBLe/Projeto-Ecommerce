@@ -1,4 +1,4 @@
-package models.usuarios.service;
+package models.usuarios.service.pagamentos;
 
 import models.usuarios.ClientePessoaJuridica;
 
@@ -10,9 +10,9 @@ public class PagamentoFaturamentoPJ implements FormasDePagamento{
         boolean aprovado = false;
 
         if(this.pessoaJuridica != pessoaJuridica){
-            System.out.println("Forma de pagamento somente para CLientes Pessoa Juridica.");
+            System.out.println("\033[1;31mForma de pagamento somente para CLientes Pessoa Juridica.\033[m");
         }else {
-            System.out.println("Pagamento Aprovado com sucesso!");
+            System.out.println("\033[32mPagamento Aprovado com sucesso!\033[m");
             aprovado = true;
         }
         return aprovado;
